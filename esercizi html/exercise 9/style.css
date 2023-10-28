@@ -1,0 +1,136 @@
+body {
+  margin: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* navbar */
+
+.sec1 {
+  display: inline-block;
+  width: 100%;
+  background-color: chocolate;
+  padding-bottom: 5px;
+}
+
+.sec1 a {
+  text-decoration: none;
+  color: antiquewhite;
+  margin: 2%;
+  padding-left: 2%;
+  font-size: x-large;
+}
+
+#logo {
+  font-size: 60px;
+  margin: 2%;
+  transition:1s; 
+  
+  
+}
+
+/* hero section */
+
+.hero {
+  display: block;
+  width: 100%;
+  color: chocolate;
+  min-height: 400px;
+  background-image: url(blog-privato.jpg);
+  background-size: cover;
+  border-top: 1px solid black;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: right;
+  margin: 20px 20px 10px 0px;
+}
+
+h2 {
+  text-align: right;
+  margin: 5px 20px 0px 0px;
+}
+
+/* article section */
+article {
+  display: block;
+  margin: 0px;
+  padding: 2% 2% 2% 2%;
+  min-height: fit-content;
+  max-height: 500px;
+  background-image: url(article_image.png);
+  background-size: cover;
+}
+
+h3 {
+  font-size: 30px;
+  color: chocolate;
+  margin: 5px 0px 10px 5px;
+}
+
+p {
+  margin: 5% 5% 2% 2%;
+}
+
+/* form section */
+
+form {
+  font-size: large;
+  display: block;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  margin: 0%;
+  background-color: antiquewhite;
+  min-height: fit-content;
+}
+h4 {
+  font-size: larger;
+  margin: 0%;
+  padding-bottom: 5%;
+}
+
+/* footer section */
+
+footer {
+  display: block;
+  background-color: burlywood;
+  border-top: solid 1px;
+  border-color: black;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.list ul {
+  display: block;
+  width: fit-content;
+  justify-content: space-evenly;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.list ul a {
+  text-decoration: none;
+  color: black;
+}
+
+/* copy */
+
+#copy a {
+  text-decoration: none;
+  color: black;
+}
