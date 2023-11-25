@@ -5,5 +5,5 @@ let b = 10;
 
 [a, b] = [b, a];
 
-console.log("Nuovo valore di a:", a);
-console.log("Nuovo valore di b:", b);
+console.log(`Nuovo valore di a: ${a}`);
+console.log(`Nuovo valore di b: ${b}`);
