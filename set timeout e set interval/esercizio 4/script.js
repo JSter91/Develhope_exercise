@@ -6,9 +6,11 @@ Utilizzi il metodo setTimeout per ritardare l' esecuzione della funzione "lancia
 Prima dello scadere dei 2 secondi stampa in console il messaggio ""Lancio dei dadi in corso..." */
 
 function lanciaDadi() {
-  let dado = Math.floor(Math.random() * 6 + 1);
+  let dado1 = Math.floor(Math.random() * 6 + 1);
+  let dado2 = Math.floor(Math.random() * 6 + 1);
+
   setTimeout(() => console.log("Lancio dei dadi in corso..."), 1000);
-  setTimeout(() => console.log(`Lancio dei dadi: Dado 1 = ${dado}, Dado 2 = ${dado}`),2000);
+  setTimeout(() => console.log(`Lancio dei dadi: Dado 1 = ${dado1}, Dado 2 = ${dado2}`),2000);
 }
 
 lanciaDadi();
