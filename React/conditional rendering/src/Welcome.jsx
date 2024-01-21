@@ -20,5 +20,3 @@ const Welcome = ({ name, age }) => {
 };
 
 export default Welcome;
-
-
