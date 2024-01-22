@@ -4,10 +4,14 @@ function Clock() {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
-    setInterval(() => setCurrentTime(() => new Date()), 1000);
-  });
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
 
-  return <h2>Current Time: {currentTime.toLocaleTimeString()}</h2>;
+    return () => clearInterval(intervalId);
+  }, []); 
+
+  return <h2>Ora attuale: {currentTime.toLocaleTimeString()}</h2>;
 }
 
 export default Clock;

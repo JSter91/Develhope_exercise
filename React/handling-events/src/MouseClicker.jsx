@@ -1,10 +1,10 @@
-function MouseClicker({ name }) {
+function MouseClicker() {
   const handleClick = (event) => {
     console.log(event.target.name);
   };
 
   return (
-    <button name={name} onClick={handleClick}>
+    <button name="one" onClick={handleClick}>
       Click me
     </button>
   );
