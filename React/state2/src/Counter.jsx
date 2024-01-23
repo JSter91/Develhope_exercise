@@ -1,8 +1,6 @@
 import { useState } from "react";
+import CounterDisplay from "./CounterDisplay";
 
-function CounterDisplay({ count }) {
-  return <h2>{count}</h2>;
-}
 
 function Counter() {
   const [count, setCount] = useState(0);
