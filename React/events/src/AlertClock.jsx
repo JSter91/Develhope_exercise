@@ -1,8 +1,5 @@
-function AlertClock() {
-    function handleButtonClick(){
-        const now = new Date()
-        alert(`the current time is: ${now.toLocaleTimeString()}`)
-    }
+function AlertClock({handleButtonClick}) {
+   
   return (
     <div>
         <p>Click the button below to show the current time</p>
