@@ -2,7 +2,6 @@ import { useState } from "react";
 import Welcome from "./Welcome";
 useState;
 function InteractiveWelcome() {
-  const [name, setName] = useState("");
 
   const handleInputChange = (e) => {
     setName(()=> e.target.value);
