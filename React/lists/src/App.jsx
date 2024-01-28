@@ -7,6 +7,8 @@ function App() {
     { id: 1, name: "Red" },
     { id: 2, name: "Green" },
     { id: 3, name: "Blue" },
+    { id: 4, name: "Green" },
+
   ];
  
   return (
