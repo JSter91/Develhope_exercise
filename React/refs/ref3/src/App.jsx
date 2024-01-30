@@ -2,10 +2,11 @@ import './App.css'
 import Counter from './Counter'
 
 function App() {
+  const initialvalue = 0
 
   return (
     <>
-    <Counter></Counter>
+    <Counter initialValue={initialvalue}></Counter>
     </>
   )
 }
