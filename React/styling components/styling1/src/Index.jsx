@@ -1,10 +1,9 @@
-import "./index.css";
-
-export function Index({children, fun}) {
+// import "./index.css";
+import Welcome from "./Welcome";
+export function Index() {
   return (
-    <div className="welcome" onMouseMoveCapture={fun}>
-      <h1>Welcome</h1>
-      {children}
-    </div>
+    <>
+      <Welcome></Welcome>
+    </>
   );
 }
