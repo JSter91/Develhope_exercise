@@ -1,0 +1,13 @@
+.child{
+    position: fixed;
+    border: 2px solid red;
+    background-color: white;
+    height: fit-content;
+    color: blue;
+    padding: 0 20px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
