@@ -1,33 +1,28 @@
-import React from 'react';
-import UseForm from './UseForm';
+import React from "react";
+import UseForm from "./UseForm";
 
 function Form() {
-  const { formData, handleUsernameChange, handlePasswordChange } = UseForm();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { username, password } = formData;
-    console.log('Username:', username);
-    console.log('Password:', password);
-  };
+  const { formData, handleInputChange, handleSubmit } = UseForm();
 
   return (
     <form onSubmit={handleSubmit}>
       <label>
         Username:
         <input
+          name="username"
           type="text"
           value={formData.username}
-          onChange={(e) => handleUsernameChange(e.target.value)}
+          onChange={handleInputChange}
         />
       </label>
       <br />
       <label>
         Password:
         <input
+          name="password"
           type="password"
           value={formData.password}
-          onChange={(e) => handlePasswordChange(e.target.value)}
+          onChange={handleInputChange}
         />
       </label>
       <br />
@@ -36,5 +31,4 @@ function Form() {
   );
 }
 
-export default Form; 
- 
+export default Form;
