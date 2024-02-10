@@ -1,8 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-function GitHubUser({username}) {
-
+function GitHubUser({ username, children }) {
   const [user, setUser] = useState(null);
 
   const fetchData = async () => {
@@ -25,6 +24,7 @@ function GitHubUser({username}) {
     <>
       {user ? (
         <div className="card-user">
+          <p>{children}</p>
           <h3>{user.name}</h3>
           <p>{user.login}</p>
           <div>
