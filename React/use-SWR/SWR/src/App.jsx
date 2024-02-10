@@ -2,10 +2,11 @@ import "./App.css";
 import GitHubUser from "./GitHubUser";
 
 function App() {
+  const username = "michael";
 
   return (
     <>
-      <GitHubUser></GitHubUser>
+      <GitHubUser username={username}></GitHubUser>
     </>
   );
 }
