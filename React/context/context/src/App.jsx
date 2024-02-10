@@ -3,6 +3,7 @@ import "./App.css";
 import { useContext } from "react";
 import { Clock } from "./Clock";
 import { LanguageContext } from "./LanguageContext";
+import Title from "./Title";
 
 function App() {
   const defaultLanguage = useContext(LanguageContext);
@@ -27,6 +28,7 @@ function App() {
 
       <LanguageContext.Provider value={selectedLanguage}>
         <Clock />
+        <Title></Title>
       </LanguageContext.Provider>
     </div>
   );

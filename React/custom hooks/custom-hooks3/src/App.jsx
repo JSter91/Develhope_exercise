@@ -1,5 +1,5 @@
 import "./App.css";
-import GitHubUser from "./GithubUser";
+import GitHubUser from "./GitHubUser";
 
 function App() {
   const username = "michael";
