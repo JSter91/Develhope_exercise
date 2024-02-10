@@ -4,25 +4,26 @@ import Welcome from "./Welcome";
 import Counter from "./Counter";
 import ShowGithubUser from "./ShowGithubUser";
 import NotFound from "./NotFound";
+import GithubUserList from "./GithubUserList";
+import GitHubUser from "./GitHubUser";
 
 function App() {
-  let {username= "JSter91"} = useParams()
-
   return (
     <>
-
       <div className="link">
         <Link to="/">home</Link>
         <Link to="/Counter">Counter</Link>
-        <Link to={`/users/:${username}`}>User</Link>
+        <Link to="/users"> list </Link>
       </div>
 
       <div className="routes">
         <Routes>
-          <Route path="/" element={<Welcome user={username} />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+          <Route path="/" element={<Welcome />}></Route>
           <Route path="/Counter" element={<Counter />}></Route>
-          <Route path={`/users/:${username}`} element={<ShowGithubUser />}></Route>
-          <Route path="*" element={<NotFound></NotFound>}></Route>
+          <Route path="/users" element={<GithubUserList />}>
+            <Route path=":username" element={<ShowGithubUser />}></Route>
+          </Route>
         </Routes>
       </div>
     </>
