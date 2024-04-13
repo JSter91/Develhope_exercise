@@ -1,0 +1,20 @@
+#title {
+  border: red solid 3px;
+}
+
+.main {
+  border: black solid 3px;
+}
+
+.footer {
+  border: green solid 3px;
+  padding-bottom: 16px;
+}
+
+p {
+  margin: 0%;
+}
+
+hr {
+  margin: 0%;
+}

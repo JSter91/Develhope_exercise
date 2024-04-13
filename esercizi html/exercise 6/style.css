@@ -1,0 +1,15 @@
+*{
+    margin: 0%;
+    padding: 3px;
+}
+
+.form{
+    background-color: antiquewhite;
+    border: 2px solid;
+    border-radius: 5px;
+    max-width: 600px;
+}
+.form div{
+    text-align: right;
+    border-radius: 30px;
+}
